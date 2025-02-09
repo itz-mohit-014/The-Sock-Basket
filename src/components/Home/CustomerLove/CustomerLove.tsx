@@ -1,14 +1,14 @@
 const CustomerLove = () => {
   return (
     <section className="max-w-7xl mx-auto p-4 font-sans min-h-screen my-20">
-      <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] lg:gap-10">
+      <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] lg:gap-10 relative">
         <h1
-          className="text-4xl sm:text-5xl font-bold max-w-[80%] lg:max-w-[500px] text-center max-lg:mx-auto"
+          className="max-lg:mb-32 text-4xl sm:text-5xl font-semibold sm:font-bold w-full sm:max-w-[80%] lg:max-w-[500px] text-center max-lg:mx-auto"
           style={{ letterSpacing: "2px" }}
         >
           Bringing happiness and colors to every corner to the world since 2008
         </h1>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center max-lg:absolute max-lg:translate-y-1/2 max-lg:bottom-0  max-sm:translate-x-1/8 max-lg:right-0">
         <svg
           width="300"
           height="300"
@@ -83,8 +83,8 @@ const CustomerLove = () => {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-y-12 gap-2 items-center justify-center">
-        <div className="lg:order-0 order-1 border-2 rounded-sm overflow-hidden border-black">
-          <img src="./images/happiness.png" alt="customer happiness image" className="h-full w-full object-cover"/>
+        <div className="border-2 rounded-sm overflow-hidden border-black">
+          <img src="/images/happiness.png" alt="customer happiness image" className="h-full w-full object-cover"/>
         </div>
         <div className="text-center w-full sm:w-[80%] mx-auto space-y-10 ">
           <h2 className="text-4xl font-semibold lg:max-w-[140px] mx-auto">

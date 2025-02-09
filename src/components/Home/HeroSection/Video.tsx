@@ -38,7 +38,7 @@ const Video = () => {
           autoPlay
           muted
           loop
-          src="./video/video1.mp4"
+          src="/video/video1.mp4"
           height="100%"
           width="100%"
           className="h-full w-full object-cover"

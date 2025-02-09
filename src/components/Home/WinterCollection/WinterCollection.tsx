@@ -1,12 +1,9 @@
-import Button from "../../UI/Buttons";
+import { Link } from "react-router-dom";
 import HeadingWithShades from "../../UI/HeadingWithShades";
 import Marquee from "../GetInTouch/Marquee";
 
 const WinterCollection = () => {
-  const handleExploreCollection = () => {
-    console.log("btn click");
-  };
-
+ 
   return (
     <>
       <section className="max-w-7xl mx-auto p-4 font-sans min-h-screen pt-12 pb-12 mt-16 mb-24 max-lg:gap-y-52 grid grid-cols-1 lg:grid-cols-2">
@@ -33,17 +30,17 @@ const WinterCollection = () => {
             <div className="w-fit max-lg:mx-auto mr-auto relative sm:translate-x-6 lg:translate-y-12">
               <div className="border-2 border-black min-w-[70vw] sm:min-w-[min(40vw,_320px)]  ml-auto aspect-square h-full"></div>
               <img
-                src="./images/winter_collection_1.png"
+                src="/images/winter_collection_1.png"
                 alt="image hesteria collection"
                 className=" border-2 border-black shadow absolute top-6 right-6 h-full w-full object-cover rounded-sm"
               />
-              <Button
+              <Link
                 className={
                   "active:scale-95 max-lg:my-8 absolute z-10 max-lg:-bottom-48 lg:bottom-1 lg:translate-x-[30%] right-1/2 translate-x-1/2 lg:right-0 bg-[#daf099] rounded-[50%] text-black px-16 py-5 font-semibold text-3xl border-2 border-black"
                 }
-                text={"Explore"}
-                onClick={handleExploreCollection}
-              />
+                to="/collection/Winter"
+              >Explore</Link>
+              
             </div>
           </div>
         </div>
@@ -52,7 +49,7 @@ const WinterCollection = () => {
           <div className="absolute top-0 right-0 h-[90%] w-[75%] border-2 border-black"></div>
           <div className="absolute top-5 right-5 h-[calc(100%-20px)] w-[calc(100%-20px)] rounded-sm border-2 border-black shadow overflow-hidden ">
             <img
-              src="./images/winter_collection_2.png"
+              src="/images/winter_collection_2.png"
               alt="image hesteria collection"
               className="h-full w-full object-cover"
             />

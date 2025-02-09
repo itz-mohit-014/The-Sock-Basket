@@ -1,8 +1,8 @@
-import Home from "./pages/Home/Home"
+import DefaultLayout from "./pages/DefaultLayout/DefaultLayout"
 
 function App() {
   return (
-    <Home/>
+    <DefaultLayout/>
   )
 }
 

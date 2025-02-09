@@ -20,12 +20,12 @@ const UpdateCard = ({
   };
 
   useEffect(() => {
+
+    // window.addEventListener('resize', () => {
+    //   console.log(window.screen.width)
       
-    window.addEventListener('resize', () => {
-      console.log(window.screen.width)
-      
-    })
-    console.log(window.screen.width)
+    // })
+    // console.log(window.screen.width)
   })
 
 
@@ -41,7 +41,7 @@ const UpdateCard = ({
         </div>
         <div className="h-20 w-full flex items-center justify-center ">
           <img
-            src={`./images/update_${index + 1}.webp`}
+            src={`/images/update_${index + 1}.webp`}
             alt=""
             className={`h-52 w-52 overscroll-contain transition-all duration-300 rotate-12 border-[2px] border-black rounded-lg bg-radial from-slate-100 to-slate-950 ${
               index == currentCard ? "scale-100" : "scale-0"
@@ -62,7 +62,7 @@ const UpdateCard = ({
           }  transition-all duration-300`}
         >
           <img
-            src="./images/right.svg"
+            src="/images/right.svg"
             alt="arrow image"
             className={`h-10 w-10 active:scale-95 scale-x-150  cursor-pointer `}
           />

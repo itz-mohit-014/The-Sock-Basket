@@ -7,25 +7,22 @@ interface MarqueeProps {
 const Marquee = ({text}:MarqueeProps) => {
   return (
     <div className="overflow-hidden whitespace-nowrap relative py-4 border-y-2 my-10 border-black">
-      {/* Marquee Container */}
-      <div className="animate-marquee flex">
-        {/* Original Content */}
-        <div className="flex space-x-4 pr-8">
+      <div className=" flex">
+        <div className="flex space-x-4 pr-8 text-transparent animate-marquee">
           {Array(5)
             .fill(0)
             .map((_, i) => (
-                <span key={i} className="inline-flex items-center text-xl">
+                <span key={i} className="inline-flex items-center font-bold text-3xl">
                 <IoGlobeOutline className="inline-block mr-4 text-red-800 text-md" />
                 {text}
               </span>
             ))}
         </div>
-        {/* Duplicated Content for Seamless Looping */}
-        <div className="flex space-x-4 pr-8">
+        <div className="flex space-x-4 pr-8  text-transparent animate-marquee">
           {Array(5)
             .fill(0)
             .map((_, i) => (
-                <span key={i} className="inline-flex items-center text-xl">
+                <span key={i} className="inline-flex items-center font-bold text-3xl">
                 <IoGlobeOutline className="inline-block mr-4 text-red-800 text-md" />
                 {text}
               </span>

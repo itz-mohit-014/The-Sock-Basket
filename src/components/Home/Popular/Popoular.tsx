@@ -9,11 +9,11 @@ const Popoular = () => {
 
   return (
     <section className="max-w-7xl mx-auto p-4 font-sans  my-12 pt-16">
-      <HeadingWithShades text={'Popular pairs'}/>
+      <HeadingWithShades text={<p className="max-sm:text-center">Popular pairs</p>}/>
 
       <div className="relative mt-16 bg-red-300">
         <img
-          src="./images/background_grid.svg"
+          src="/images/background_grid.svg"
           alt="svg image"
           className="absolute top-0 left-0 w-full h-full "
         />

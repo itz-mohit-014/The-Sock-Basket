@@ -92,7 +92,7 @@ const Footer = () => {
                   placeholder="Your E-mail"
                   className="flex-1 text-base font-sans text-black placeholder:text-black border-none outline-none italic"
                 />
-                <img src="./images/right.svg" alt="arrow image" className="h-10 w-10 active:scale-95 cursor-pointer"/>
+                <img src="/images/right.svg" alt="arrow image" className="h-10 w-10 active:scale-95 cursor-pointer"/>
               </div>
             </div>
           </div>
@@ -103,7 +103,7 @@ const Footer = () => {
         <div className="col-span-3 max-w-7xl mx-auto p-4 flex md:justify-between items-center  gap-4  gap-y-8 flex-wrap">
           <div className="flex gap-3 items-center justify-start">
             <div className="h-8 w-8">
-              <img src="./icon.svg" alt="logo" className="" />
+              <img src="/icon.svg" alt="logo" className="" />
             </div>
             <p className="text-slate-800 text-base">@ Happy Socks 2025</p>
           </div>
