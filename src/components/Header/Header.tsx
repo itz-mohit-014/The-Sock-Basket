@@ -1,6 +1,7 @@
 import { IoSearch } from "react-icons/io5";
 import { PiHandbagBold } from "react-icons/pi";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useCart } from "../../context/CartContext";
 
 const Header = () => {
   const navLink: String[] = [
@@ -11,6 +12,14 @@ const Header = () => {
     "Limited edition",
     "Sale",
   ];
+
+  const { state } = useCart();
+  const totalItems = state.cart.reduce((acc, item) => acc + item.quantity, 0);
+  const navigate = useNavigate();
+
+  const handleGoToCart = () => {
+    navigate("/cart");
+  }
 
   return (
     <header>
@@ -31,16 +40,16 @@ const Header = () => {
           </ul>
         </div>
         <div className="flex justify-center items-center gap-1.5 ">
-          {[IoSearch, PiHandbagBold].map((Icon, index) => {
-            return (
-              <div
-                key={index}
-                className="w-8 h-8 rounded-full border-2 border-slate-700 grid place-items-center active:scale-95 cursor-pointer"
-              >
-                <Icon className="text-lg text-slate-700" />
-              </div>
-            );
-          })}
+          <div className="w-8 h-8 rounded-full border-2 border-slate-700 grid place-items-center active:scale-95 cursor-pointer relative">
+            <IoSearch className="text-lg text-slate-700" />
+          </div>
+
+          <div className="w-8 h-8 rounded-full border-2 border-slate-700 grid place-items-center active:scale-95 cursor-pointer relative" onClick={handleGoToCart}>
+            <span className="absolute top-0 -translate-y-3 translate-x-2 px-1.5 font-medium aspect-square right-0 text-sm bg-[#dff0a3] border border-black rounded-full">
+              {totalItems}
+            </span>
+            <PiHandbagBold className="text-lg text-slate-700" />
+          </div>
         </div>
       </nav>
     </header>

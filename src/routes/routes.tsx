@@ -3,6 +3,7 @@ import Home from "../pages/Home/Home";
 import App from '../App'
 import Collection from "../pages/Collection/Collection";
 import DetailViewItem from "../pages/DetailViewItem/DetailViewItem";
+import CartPage from "../pages/Cart/Cart";
 
 export const route = createBrowserRouter([
     {
@@ -21,6 +22,10 @@ export const route = createBrowserRouter([
                 path:"/collection/:collectionName/:itemId",
                 element:<DetailViewItem/>
             },
+            {
+                path:"/cart",
+                element:<CartPage/>
+            }
         ]
     }
 ]

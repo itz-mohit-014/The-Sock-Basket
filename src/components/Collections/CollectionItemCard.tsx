@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { ItemProp } from "../../mocks/ItemsCollectionData";
 import { AiOutlineShoppingCart } from "react-icons/ai";
+import { useCart } from "../../context/CartContext";
+import toast from "react-hot-toast";
 
 interface InputValue {
   data: ItemProp;
@@ -13,6 +15,27 @@ const CollectionItemCard = ({ data, className = "", layout }: InputValue) => {
 
   const handleProductLink = () => navigate(`./${data.id}`);
 
+  const { dispatch } = useCart();
+
+  const handleAddItemToCart = () => {
+      dispatch({
+        type: "ADD_ITEM", 
+        payload: {...data, quantity: 1}
+      })
+
+      toast.dismiss();
+      toast.success("Item added in cart successfully")
+  }
+
+  const handleCheckout = () => {
+    dispatch({
+      type: "ADD_ITEM", 
+      payload: {...data, quantity: 1}
+    })
+
+    navigate('/cart');
+  }
+ 
   return (
     <div className={`${className}`} style={layout}>
       <div className="overflow-hidden w-full min-h-[200px]  relative group shadow-2xl animate-bg rounded-md">
@@ -23,7 +46,7 @@ const CollectionItemCard = ({ data, className = "", layout }: InputValue) => {
           loading="lazy"
         />
 
-        <span className="absolute top-4 right-4 outline-3 outline-[#daf099] inline-flex h-10 w-10 rounded-full bg-black text-white text-xl items-center justify-center active:scale-95 cursor-pointer">
+        <span onClick={handleAddItemToCart} className="absolute top-4 right-4 outline-3 outline-[#daf099] inline-flex h-10 w-10 rounded-full bg-black text-white text-xl items-center justify-center active:scale-95 cursor-pointer">
           <AiOutlineShoppingCart className="" />
         </span>
 
@@ -75,7 +98,7 @@ const CollectionItemCard = ({ data, className = "", layout }: InputValue) => {
             $ {Number(data.currentPrice).toFixed(2)}
           </span>
 
-          <button className="relative inline-flex items-center justify-center p-4 px-5 py-2 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-black shadow-md group active:scale-95 cursor-pointer">
+          <button onClick={handleCheckout} className="relative inline-flex items-center justify-center p-4 px-5 py-2 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-black shadow-md group active:scale-95 cursor-pointer">
             <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-black group-hover:translate-x-0 ease">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

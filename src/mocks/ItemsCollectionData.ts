@@ -22,7 +22,7 @@ export const WinterCollectionItems: ItemProp[] = [
         productShortDescirption: "Put on your sunglasses, this pair is a colorful cocktail. The blue and pink Big Dot socks fresh pastels blend in with the classic spotted print for an original summer style.",
         productDetailedDescirption: "Made from high-quality cotton blend, these socks ensure comfort and durability.",
         avalSize: ["36-40", "41-46"],
-        images: ["product-01.webp"],
+        images: ["product-01.png"],
         isAvailable: true,
         
     },
@@ -35,7 +35,7 @@ export const WinterCollectionItems: ItemProp[] = [
         productShortDescirption: "Keep your head warm with this stylish and cozy knit beanie, perfect for chilly days.",
         productDetailedDescirption: "Crafted with premium wool for extra warmth and comfort.",
         avalSize: ["One Size"],
-        images: ["product-02.webp"],
+        images: ["product-02.png"],
         isAvailable: true,
         
     },
@@ -48,7 +48,7 @@ export const WinterCollectionItems: ItemProp[] = [
         productShortDescirption: "Premium thermal gloves to keep your hands warm in winter.",
         productDetailedDescirption: "Designed with a fleece lining for extra insulation against cold weather.",
         avalSize: ["S", "M", "L"],
-        images: ["product-03.webp"],
+        images: ["product-03.png"],
         isAvailable: true,
         
     },
@@ -61,7 +61,7 @@ export const WinterCollectionItems: ItemProp[] = [
         productShortDescirption: "A soft and cozy fleece scarf for extra warmth and comfort.",
         productDetailedDescirption: "Made with ultra-soft material, perfect for winter layering.",
         avalSize: ["One Size"],
-        images: ["product-04.webp"],
+        images: ["product-04.png"],
         isAvailable: true,
         
     },
@@ -74,7 +74,7 @@ export const WinterCollectionItems: ItemProp[] = [
         productShortDescirption: "Durable and stylish winter boots for cold weather protection.",
         productDetailedDescirption: "Waterproof and insulated for maximum comfort and warmth.",
         avalSize: ["38", "39", "40", "41", "42"],
-        images: ["product-05.webp"],
+        images: ["product-05.png"],
         isAvailable: true,
         
     },
@@ -87,7 +87,7 @@ export const WinterCollectionItems: ItemProp[] = [
         productShortDescirption: "A classic wool sweater to keep you warm and stylish.",
         productDetailedDescirption: "Knitted with premium wool for maximum insulation.",
         avalSize: ["S", "M", "L", "XL"],
-        images: ["product-06.webp"],
+        images: ["product-06.png"],
         isAvailable: true,
         
     },
@@ -100,7 +100,7 @@ export const WinterCollectionItems: ItemProp[] = [
         productShortDescirption: "A lightweight yet warm puffer jacket for winter wear.",
         productDetailedDescirption: "Filled with high-quality insulation to retain body heat.",
         avalSize: ["S", "M", "L", "XL"],
-        images: ["product-07.webp"],
+        images: ["product-07.png"],
         isAvailable: true,
         
     },
@@ -113,7 +113,7 @@ export const WinterCollectionItems: ItemProp[] = [
         productShortDescirption: "Thick thermal socks for keeping feet warm in extreme cold.",
         productDetailedDescirption: "Made with high-quality wool blend for extra insulation.",
         avalSize: ["36-40", "41-46"],
-        images: ["product-08.webp"],
+        images: ["product-08.png"],
         isAvailable: true,
         
     },
@@ -126,7 +126,7 @@ export const WinterCollectionItems: ItemProp[] = [
         productShortDescirption: "Super soft winter pajamas for a cozy night’s sleep.",
         productDetailedDescirption: "Made from fleece fabric to keep you warm and comfortable.",
         avalSize: ["S", "M", "L", "XL"],
-        images: ["product-09.webp"],
+        images: ["product-09.png"],
         isAvailable: true,
         
     },
@@ -139,7 +139,7 @@ export const WinterCollectionItems: ItemProp[] = [
         productShortDescirption: "A stylish faux fur coat for luxurious warmth.",
         productDetailedDescirption: "Soft faux fur lining for maximum comfort and elegance.",
         avalSize: ["S", "M", "L", "XL"],
-        images: ["product-10.webp"],
+        images: ["product-10.png"],
         isAvailable: true,
         
     },
@@ -152,7 +152,7 @@ export const WinterCollectionItems: ItemProp[] = [
         productShortDescirption: "Luxurious cashmere gloves for a soft and warm experience.",
         productDetailedDescirption: "Made with 100% cashmere, these gloves provide ultimate warmth and comfort.",
         avalSize: ["S", "M", "L"],
-        images: ["product-11.webp"],
+        images: ["product-11.png"],
         isAvailable: true,
         
     }, {
@@ -164,7 +164,7 @@ export const WinterCollectionItems: ItemProp[] = [
         productShortDescirption: "A classic knitted wool hat to keep you cozy.",
         productDetailedDescirption: "Made with high-quality wool for extra warmth in cold weather.",
         avalSize: ["One Size"],
-        images: ["product-12.webp"],
+        images: ["product-12.png"],
         isAvailable: true,
         
     },
@@ -177,7 +177,7 @@ export const WinterCollectionItems: ItemProp[] = [
         productShortDescirption: "Stay warm and stylish with fleece-lined leggings.",
         productDetailedDescirption: "Soft fleece interior for extra insulation and comfort.",
         avalSize: ["S", "M", "L", "XL"],
-        images: ["product-13.webp"],
+        images: ["product-13.png"],
         isAvailable: true,
         
     },
@@ -190,7 +190,7 @@ export const WinterCollectionItems: ItemProp[] = [
         productShortDescirption: "Ultra-soft sherpa-lined hoodie for ultimate warmth.",
         productDetailedDescirption: "Made with thick cotton fleece and sherpa lining.",
         avalSize: ["S", "M", "L", "XL"],
-        images: ["product-14.webp"],
+        images: ["product-14.png"],
         isAvailable: true,
         
     },
@@ -203,7 +203,7 @@ export const WinterCollectionItems: ItemProp[] = [
         productShortDescirption: "Waterproof snow boots with fur trim for a stylish look.",
         productDetailedDescirption: "Designed for extreme cold conditions with extra grip.",
         avalSize: ["38", "39", "40", "41", "42"],
-        images: ["product-15.webp"],
+        images: ["product-15.png"],
         isAvailable: true,
         
     },
@@ -216,7 +216,7 @@ export const WinterCollectionItems: ItemProp[] = [
         productShortDescirption: "Lightweight and warm thermal underwear set.",
         productDetailedDescirption: "Designed for layering under winter clothing.",
         avalSize: ["S", "M", "L", "XL"],
-        images: ["product-16.webp"],
+        images: ["product-16.png"],
         isAvailable: true,
         
     },
@@ -229,7 +229,7 @@ export const WinterCollectionItems: ItemProp[] = [
         productShortDescirption: "Oversized chunky knit cardigan for cozy winter days.",
         productDetailedDescirption: "Perfect for layering over outfits for extra warmth.",
         avalSize: ["S", "M", "L"],
-        images: ["product-17.webp"],
+        images: ["product-17.png"],
         isAvailable: true,
         
     },
@@ -242,7 +242,7 @@ export const WinterCollectionItems: ItemProp[] = [
         productShortDescirption: "Waterproof insulated ski pants for extreme winter sports.",
         productDetailedDescirption: "Breathable fabric with fleece lining for warmth.",
         avalSize: ["S", "M", "L", "XL"],
-        images: ["product-18.webp"],
+        images: ["product-18.png"],
         isAvailable: true,
         
     },
@@ -255,7 +255,7 @@ export const WinterCollectionItems: ItemProp[] = [
         productShortDescirption: "Cute and stylish faux fur earmuffs for chilly days.",
         productDetailedDescirption: "Ultra-soft faux fur lining for added comfort.",
         avalSize: ["One Size"],
-        images: ["product-19.webp"],
+        images: ["product-19.png"],
         isAvailable: true,
         
     },
@@ -268,7 +268,7 @@ export const WinterCollectionItems: ItemProp[] = [
         productShortDescirption: "Lightweight and warm down puffer vest for layering.",
         productDetailedDescirption: "Filled with premium down for maximum insulation.",
         avalSize: ["S", "M", "L", "XL"],
-        images: ["product-20.webp"],
+        images: ["product-20.png"],
         isAvailable: true,
         
     },
@@ -281,7 +281,7 @@ export const WinterCollectionItems: ItemProp[] = [
         productShortDescirption: "Full coverage fleece balaclava for extreme cold.",
         productDetailedDescirption: "Designed for skiing, biking, and winter adventures.",
         avalSize: ["One Size"],
-        images: ["product-21.webp"],
+        images: ["product-21.png"],
         isAvailable: true,
         
     }
